@@ -28,13 +28,15 @@ Swagger使用的注解及其说明：
 
 
  paramType=：指定参数放在哪个地方   默认是body
-          header：请求参数放置于Request Header，使用@RequestHeader获取
-          query：请求参数放置于请求地址，使用@RequestParam获取
-          path：（用于restful接口）-->请求参数的获取：@PathVariable
-          body：（不常用）
-          form（不常用）
-          
-  两个注意点：
+      header：请求参数放置于Request Header，使用@RequestHeader获取
+      query：请求参数放置于请求地址，使用@RequestParam获取
+      path：（用于restful接口）-->请求参数的获取：@PathVariable
+      body：（不常用）
+      form（不常用）
+
+
+
+两个注意点：
 
 1.  paramType会直接影响程序的运行期，如果paramType与方法参数获取使用的注解不一致，会直接影响到参数的接收。
 
